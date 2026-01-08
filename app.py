@@ -127,7 +127,7 @@ def sports():
         current_year=datetime.now().year
     )
 
-@app.route("/reports")
+@app.route("/report")
 def report():
     posts = fetch_posts_by_category("Reports")
     return render_template(
@@ -269,4 +269,5 @@ def delete_post(post_id):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
+
 
