@@ -383,7 +383,7 @@ iframe[src*="google.com/maps"] {
 /* Fix dashboard for mobile */
 @media (max-width: 768px) {
     .dashboard {
-        height: auto;
+        height: 60px;
         padding: 100px 10px;
     }
 
@@ -391,6 +391,7 @@ iframe[src*="google.com/maps"] {
         font-size: 13px;
     }
 }
+
 
 
 
