@@ -7,6 +7,52 @@
     box-sizing: border-box;
 }
 
+/* =========================
+   SITE FOOTER (SINGLE CLASS)
+========================= */
+
+.site-footer {
+    background-color: #f6f6f6;
+    border-top: 1px solid #e0e0e0;
+    padding: 28px 15px;
+    text-align: center;
+
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Slight emphasis for important text */
+.site-footer strong {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Soft separator line effect */
+.site-footer::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto 15px auto;
+    border-radius: 5px;
+}
+
+/* =========================
+   MOBILE POLISH
+========================= */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 22px 12px;
+        font-size: 12px;
+    }
+
+    .site-footer::before {
+        width: 45px;
+    }
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -391,6 +437,7 @@ iframe[src*="google.com/maps"] {
         font-size: 13px;
     }
 }
+
 
 
 
