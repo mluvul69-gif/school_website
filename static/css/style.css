@@ -280,6 +280,50 @@ header {
    MOBILE FIXES
 ========================= */
 
+/* =========================
+   GOOGLE MAPS MOBILE FIX
+========================= */
+
+/* Wrapper safety (if you have a map container) */
+.map-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Default iframe behavior */
+.map-container iframe,
+iframe[src*="google.com/maps"] {
+    width: 100%;
+    border: 0;
+}
+
+/* Tablets & phones */
+@media (max-width: 768px) {
+
+    /* Prevent map from overlapping top bar */
+    .map-container {
+        margin-top: 10px;
+    }
+
+    /* Keep map height reasonable */
+    .map-container iframe,
+    iframe[src*="google.com/maps"] {
+        height: 280px;
+        max-height: 40vh; /* never taller than 40% of screen */
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .map-container iframe,
+    iframe[src*="google.com/maps"] {
+        height: 220px;
+        max-height: 35vh; /* extra safety */
+    }
+}
+
 /* Fix header layout on small screens */
 @media (max-width: 768px) {
     .top-bar {
@@ -347,5 +391,6 @@ header {
         font-size: 13px;
     }
 }
+
 
 
