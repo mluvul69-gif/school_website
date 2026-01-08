@@ -39,20 +39,6 @@
     border-radius: 5px;
 }
 
-/* =========================
-   MOBILE POLISH
-========================= */
-@media (max-width: 768px) {
-    .site-footer {
-        padding: 22px 12px;
-        font-size: 12px;
-    }
-
-    .site-footer::before {
-        width: 45px;
-    }
-}
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -430,11 +416,25 @@ iframe[src*="google.com/maps"] {
 @media (max-width: 768px) {
     .dashboard {
         height: auto;
-        padding: 20px 80px;
+        padding: 20px 90px;
     }
 
     .dash-item {
         font-size: 13px;
+    }
+}
+
+/* =========================
+   MOBILE POLISH
+========================= */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 22px 12px;
+        font-size: 12px;
+    }
+
+    .site-footer::before {
+        width: 45px;
     }
 }
 
