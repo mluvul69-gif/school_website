@@ -384,13 +384,14 @@ iframe[src*="google.com/maps"] {
 @media (max-width: 768px) {
     .dashboard {
         height: auto;
-        padding: 20px 100px;
+        padding: 20px 80px;
     }
 
     .dash-item {
         font-size: 13px;
     }
 }
+
 
 
 
