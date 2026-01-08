@@ -413,14 +413,33 @@ iframe[src*="google.com/maps"] {
 }
 
 /* Fix dashboard for mobile */
+/* =========================
+   FULL-HEIGHT DASHBOARD ON MOBILE
+========================= */
 @media (max-width: 768px) {
+
+    /* Make hero taller on mobile */
+    .hero-image {
+        height: 45vh; /* 45% of screen height */
+    }
+
+    /* Dashboard fills the rest of the screen */
     .dashboard {
+        min-height: calc(100vh - 45vh);
         height: auto;
-        padding: 20px 90px;
+        padding: 30px 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        text-align: center;
     }
 
     .dash-item {
-        font-size: 13px;
+        font-size: 15px;
+        line-height: 1.4;
     }
 }
 
@@ -437,6 +456,7 @@ iframe[src*="google.com/maps"] {
         width: 45px;
     }
 }
+
 
 
 
